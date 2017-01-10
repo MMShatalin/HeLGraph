@@ -43,8 +43,7 @@ namespace Converter
             }
             List<int> myIndexesKKS = new List<int>();
             List<int> myCount = new List<int>();
-        //    float[] myIndexes = new float[CheckedNodes.Count];
-       //     int temp = 0;
+
             foreach (TreeNode checkedNode in CheckedNodes)
             {
                 //можно было бы в будущем завязать checkedNode.Text на KKSName, чтобы не тратить время на сравнение текстов - это бредос!!!!!!!(
@@ -55,18 +54,11 @@ namespace Converter
                         myIndexesKKS.Add(i);
                         myCount.Add(MyAllSensors[i].MyListRecordsForOneKKS.Count);
 
-                     //  MessageBox.Show(myIndexes[0].KKS_Name.ToString());
-                      //  MessageBox.Show(CheckedNodes.Count.ToString());
-                        //MyFileRecord.WriteLine(MyAllSensors[i].KKS_Name);
-                        //for (int j = 0; j < MyAllSensors[i].MyListRecordsForOneKKS.Count; j++)
-                        //{
-                        //    MyFileRecord.WriteLine(MyAllSensors[i].MyListRecordsForOneKKS[j].DateTime + " " + MyAllSensors[i].MyListRecordsForOneKKS[j].Value);
-                        //}
+           
                     }
-                   // else {}
+
                 }
-             //   temp++;
-                // MessageBox.Show(checkedNode.Text.ToString());
+      
             }
 
 
