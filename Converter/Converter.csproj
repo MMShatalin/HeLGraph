@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DB8BE3F-EB5F-492A-A063-188B83EF20F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Converter</RootNamespace>
+    <AssemblyName>Converter</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extract.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Archive.cs" />
+    <Compile Include="MyVirtualClass.cs" />
+    <Compile Include="PowerEffect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerEffect.Designer.cs">
+      <DependentUpon>PowerEffect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Record.cs" />
+    <Compile Include="ScrollEngine.cs" />
+    <Compile Include="Search_Min_Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sensors.cs" />
+    <Compile Include="twoPoint.cs" />
+    <Compile Include="Метки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Метки.Designer.cs">
+      <DependentUpon>Метки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Памятка по форматам.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Памятка по форматам.Designer.cs">
+      <DependentUpon>Памятка по форматам.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Параметры на участке.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Параметры на участке.Designer.cs">
+      <DependentUpon>Параметры на участке.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Передвинуть график.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Передвинуть график.Designer.cs">
+      <DependentUpon>Передвинуть график.cs</DependentUpon>
+    </Compile>
+    <Compile Include="СhangeLegends.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="СhangeLegends.Designer.cs">
+      <DependentUpon>СhangeLegends.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Сглаживание_скользящим_средним.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Сглаживание_скользящим_средним.Designer.cs">
+      <DependentUpon>Сглаживание_скользящим_средним.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Толщина.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Толщина.Designer.cs">
+      <DependentUpon>Толщина.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerEffect.resx">
+      <DependentUpon>PowerEffect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Метки.resx">
+      <DependentUpon>Метки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Памятка по форматам.resx">
+      <DependentUpon>Памятка по форматам.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Параметры на участке.resx">
+      <DependentUpon>Параметры на участке.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Передвинуть график.resx">
+      <DependentUpon>Передвинуть график.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="СhangeLegends.resx">
+      <DependentUpon>СhangeLegends.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Сглаживание_скользящим_средним.resx">
+      <DependentUpon>Сглаживание_скользящим_средним.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Толщина.resx">
+      <DependentUpon>Толщина.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
