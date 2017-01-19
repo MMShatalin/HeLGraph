@@ -2686,8 +2686,9 @@ namespace Converter
         {
            StreamWriter MyRecord = new StreamWriter("D:\\1231.txt");
           //  Extract MyOb = new Extract(MyAllSensors);
-            Extract.SelectedCheckedNodes(treeView1.Nodes, MyAllSensors, MyRecord);
-            MyRecord.Close();
+            Extract.SelectedCheckedNodes(treeView1.Nodes);
+            Extract.MWriter(MyAllSensors,MyRecord);
+          //  MyRecord.Close();
      //      List<TreeNode> t = new List<TreeNode>();
        //  MessageBox.Show( Extract.SelectedCheckedNodes(treeView1.Nodes)[0].Text);
 

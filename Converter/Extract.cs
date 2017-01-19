@@ -24,55 +24,66 @@ namespace Converter
         {  
             NecessaryParams = necessaryParams;
         }
-     
-        public static void SelectedCheckedNodes(TreeNodeCollection nodes, List<Sensors> MyAllSensors, StreamWriter MyRecord)
+
+        static List<string> _myNameKks = new List<string>();
+        public static void SelectedCheckedNodes(TreeNodeCollection nodes)
         {
-          //StreamWriter mySelectedFile = new StreamWriter("D:\\1234.txt");
-        List<TreeNode> CheckedNodes = new List<TreeNode>();
-           CheckedNodes.Clear();
+            List<TreeNode> CheckedNodes = new List<TreeNode>();
+            CheckedNodes.Clear();
             foreach (TreeNode node in nodes)
             {
                 if (node.Checked)
                 {
                     CheckedNodes.Add(node);
+                    _myNameKks.Add(node.Text);
                 }
                 else
                 {
-                    SelectedCheckedNodes(node.Nodes, MyAllSensors, MyRecord);
+                    SelectedCheckedNodes(node.Nodes);
                 }
             }
-            List<int> myIndexesKKS = new List<int>();
-            List<int> myCount = new List<int>();
+        }
 
-            foreach (TreeNode checkedNode in CheckedNodes)
+        public static void MWriter(List<Sensors> MyAllSensors,
+            StreamWriter MyRecord)
+        {
+            List<int> mycount = new List<int>();
+            List<Sensors> mSensorses = new List<Sensors>();
+            for (int i = 0; i < _myNameKks.Count; i++)
             {
-                //можно было бы в будущем завязать checkedNode.Text на KKSName, чтобы не тратить время на сравнение текстов - это бредос!!!!!!!(
-                for (int i = 0; i < MyAllSensors.Count; i++)
+                for (int j = 0; j < MyAllSensors.Count; j++)
                 {
-                    if (checkedNode.Text == MyAllSensors[i].KKS_Name)
+                    if (_myNameKks[i] == MyAllSensors[j].KKS_Name)
                     {
-                        myIndexesKKS.Add(i);
-                        myCount.Add(MyAllSensors[i].MyListRecordsForOneKKS.Count);
-
-           
+                        mycount.Add(MyAllSensors[j].MyListRecordsForOneKKS.Count);
+                        mSensorses.Add(MyAllSensors[j]);
                     }
-
                 }
-      
+            }
+            for (int i = 0; i < _myNameKks.Count; i++)
+            {
+                MyRecord.Write(_myNameKks[i] + "\t");
+            }
+            MyRecord.WriteLine();
+            int max = mycount.Max();
+            for (int j = 0; j < max; j++)
+            {
+                for (int i = 0; i < mSensorses.Count; i++)
+                {
+                    try
+                    {
+                        MyRecord.Write(mSensorses[i].MyListRecordsForOneKKS[j].DateTime +" "+ mSensorses[i].MyListRecordsForOneKKS[j].Value + "\t");
+                    }
+                    catch (Exception)
+                    {
+                        MyRecord.Write("\t");
+                    }
+                }
+                MyRecord.WriteLine();
             }
 
-
-
-         
-
-
-
-
-
-
-
-         //   MyFileRecord.Close();
-        
+            MyRecord.Close();
+      //      MessageBox.Show(_myNameKks.Count.ToString());
         }
     }
 }
