@@ -2684,7 +2684,7 @@ namespace Converter
 
         private void извлечьПараметрыВТXTToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           StreamWriter MyRecord = new StreamWriter("D:\\1231.txt");
+            StreamWriter MyRecord = new StreamWriter("D:\\1231.csv",false, Encoding.Default);
           //  Extract MyOb = new Extract(MyAllSensors);
             Extract.SelectedCheckedNodes(treeView1.Nodes);
             Extract.MWriter(MyAllSensors,MyRecord);

@@ -55,6 +55,7 @@ namespace Converter
                 {
                     if (_myNameKks[i] == MyAllSensors[j].KKS_Name)
                     {
+                      //  MessageBox.Show("привет!");
                         mycount.Add(MyAllSensors[j].MyListRecordsForOneKKS.Count);
                         mSensorses.Add(MyAllSensors[j]);
                     }
@@ -62,25 +63,26 @@ namespace Converter
             }
             for (int i = 0; i < _myNameKks.Count; i++)
             {
-                MyRecord.Write(_myNameKks[i] + "\t");
+                MyRecord.Write(_myNameKks[i] + ";;");
             }
             MyRecord.WriteLine();
             int max = mycount.Max();
+     
             for (int j = 0; j < max; j++)
-            {
-                for (int i = 0; i < mSensorses.Count; i++)
-                {
-                    try
-                    {
-                        MyRecord.Write(mSensorses[i].MyListRecordsForOneKKS[j].DateTime +" "+ mSensorses[i].MyListRecordsForOneKKS[j].Value + "\t");
+           {
+              for (int i = 0; i < mSensorses.Count; i++)
+               {
+                 if(j<=mSensorses[i].MyListRecordsForOneKKS.Count-1)
+                  {
+                       MyRecord.Write(mSensorses[i].MyListRecordsForOneKKS[j].DateTime +";"+ mSensorses[i].MyListRecordsForOneKKS[j].Value + ";");
+                   }
+                 else
+                   {
+                       MyRecord.Write(";;");
                     }
-                    catch (Exception)
-                    {
-                        MyRecord.Write("\t");
-                    }
-                }
+               }
                 MyRecord.WriteLine();
-            }
+             }
 
             MyRecord.Close();
       //      MessageBox.Show(_myNameKks.Count.ToString());
