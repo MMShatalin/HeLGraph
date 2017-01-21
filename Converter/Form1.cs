@@ -355,47 +355,25 @@ namespace Converter
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            приветToolStripMenuItem.Visible = false;
             иToolStripMenuItem.Visible = false;
-            yyuyuyiToolStripMenuItem.Visible = false;
-            //IndexDeleteGraf = NumberSeries;
             comboBox1.Enabled = false;
-            dfsdToolStripMenuItem.Visible = false;
             добавитьНаОсьXToolStripMenuItem.Enabled = false;
-      //      правкаToolStripMenuItem.Visible = false;
-            jToolStripMenuItem1.Visible = false;
-
-
-
-     //       правкаToolStripMenuItem.Visible = true;
             jToolStripMenuItem.Visible = false;
-        //    очиститьВсеToolStripMenuItem.Visible = false;
             изменитьТолщинуToolStripMenuItem.Visible = false;
             легендаToolStripMenuItem.Visible = false;
             логарифмическаяШкалаToolStripMenuItem.Visible = true;
-            показатьВсеЛегендыToolStripMenuItem.Visible = false;
-            добавитьНаОсьYToolStripMenuItem.Visible = false;
-            показатьКоличествоГрафиковToolStripMenuItem.Visible = false;
-            показатьНомерToolStripMenuItem.Visible = false;
             checkBox2.Enabled = false;
             добавитьНаY1JnDhtvtyToolStripMenuItem.Visible = false;
             добавитьНаОсьY2JnDhtvtyToolStripMenuItem.Visible = false;
             добавитьНаОсьY3ОтВремениToolStripMenuItem.Visible = false;
             lkToolStripMenuItem.Visible = false;
-            //  toolTip1.Show("Для начала откройте файл данных (Файл->Открыть)", this.menuStrip1);
 
 
 
             логарифмическаяШкалаToolStripMenuItem.Visible = false;
-           // ZedGraph.GraphPane pane = zedGraphControl1.GraphPane;
             CreateChart();
-         //   chart1.ChartAreas[0].AxisY.Maximum = 1;
-            tabPage1.Text = "Зона построения";
             tabPage2.Text = "Данные";
             tabPage3.Text = "Показатели";
-         //   tabPage1.Text = "от";
-        //    tabPage2.Text = "Графики ZedGraph";
-
             for (int i = 1; i < 5; i++)
             {
                 chart1.Series["Series" + i].IsVisibleInLegend = false;
@@ -413,14 +391,12 @@ namespace Converter
             comboBox1.Items.Add("Время");
             comboBox1.Items.Add("Дата");        
             comboBox1.Items.Add("Дата-Время");
-          //  comboBox1.Items.Add("Число");
 
 
             chart1.ChartAreas[0].AxisX.TitleFont = new System.Drawing.Font("Times New Roman", 14, FontStyle.Regular);
             chart1.ChartAreas[0].AxisY.TitleFont = new System.Drawing.Font("Times New Roman", 14, FontStyle.Regular);
 
             this.dataGridView1.VirtualMode = true;
-        //    this.dataGridView3.VirtualMode = true;
 
             DataGridViewTextBoxColumn companyNameColumn = new DataGridViewTextBoxColumn();
             companyNameColumn.HeaderText = "Время";
@@ -435,35 +411,12 @@ namespace Converter
             DataGridViewTextBoxColumn companyNameColumn2 = new DataGridViewTextBoxColumn();
             companyNameColumn2.HeaderText = "Время";
             companyNameColumn2.Name = "Время";
-         //   this.dataGridView3.Columns.Add(companyNameColumn2);
 
             DataGridViewTextBoxColumn companyNameColumn3 = new DataGridViewTextBoxColumn();
             companyNameColumn3.HeaderText = "Значение";
             companyNameColumn3.Name = "Значение";
-          //  this.dataGridView3.Columns.Add(companyNameColumn3);
-
-
-
-
-
             dataGridView1.Columns[0].Width = 200;
             dataGridView1.Columns[1].Width = 200;
-
-            //dataGridView3.Columns[0].Width = 200;
-            //dataGridView3.Columns[1].Width = 200;
-
-           // ZedGraph.PointPairList n1 = new ZedGraph.PointPairList();
-         //   ZedGraph.PointPairList n2 = new ZedGraph.PointPairList();
-           // ZedGraph.PointPairList n3 = new ZedGraph.PointPairList();
-           // ZedGraph.PointPairList n4 = new ZedGraph.PointPairList();
-           // ZedGraph.PointPairList n5 = new ZedGraph.PointPairList();
-            //ZedGraph.PointPairList n6 = new ZedGraph.PointPairList();
-        //    MyList.Add(n1);
-          //  MyList.Add(n2);
-           // MyList.Add(n3);
-           // MyList.Add(n4);
-           // MyList.Add(n5);
-           // MyList.Add(n6);
         }
         private void dataGridView3_CellValueNeeded(object sender,
         System.Windows.Forms.DataGridViewCellValueEventArgs e)
@@ -883,7 +836,7 @@ namespace Converter
             // Создаём новый элемент управления Chart
            // chart1 = new Chart();
             // Помещаем его на форму
-            chart1.Parent = splitContainer4.Panel1;
+            chart1.Parent = splitContainer1.Panel1;
 
             // Задаём размеры элемента
             chart1.Dock = DockStyle.Fill;
@@ -1237,7 +1190,6 @@ namespace Converter
         private void поменятьФорматОсиXНаВременнойToolStripMenuItem_Click(object sender, EventArgs e)
         {
             chart1.Series[0].XValueType = ChartValueType.Time;
-            добавитьНаОсьYToolStripMenuItem.Enabled = true;
         }
 
         private void checkBox4_CheckedChanged_1(object sender, EventArgs e)
@@ -2650,6 +2602,29 @@ namespace Converter
         private void button10_Click_1(object sender, EventArgs e)
         {
 
+           
+        }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+        }
+
+
+
+        private void извлечьПараметрыВТXTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog4.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter MyRecord = new StreamWriter(saveFileDialog4.FileName + ".csv", false, Encoding.Default);
+                saveFileDialog1.Filter = "out data (*.csv)|*.csv|All files (*.*)|*.*";
+                saveFileDialog1.DefaultExt = "csv";
+                Extract.SelectedCheckedNodes(treeView1.Nodes);
+                Extract.MWriter(MyAllSensors, MyRecord);
+            }
+        }
+
+        private void перевестиВсеДанныеВTXTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             if (saveFileDialog4.ShowDialog() == DialogResult.OK)
             {
                 StreamWriter TOFTONEED = new StreamWriter(saveFileDialog4.FileName + ".txt");
@@ -2674,41 +2649,6 @@ namespace Converter
             }
         }
 
-        private void button11_Click_1(object sender, EventArgs e)
-        {
-            chart1.ChartAreas[0].InnerPlotPosition = new ElementPosition(6, 12, 120, 80);
-            button11.Text = "Кнопка";
-        }
-
-
-
-        private void извлечьПараметрыВТXTToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            StreamWriter MyRecord = new StreamWriter("D:\\1231.csv",false, Encoding.Default);
-          //  Extract MyOb = new Extract(MyAllSensors);
-            Extract.SelectedCheckedNodes(treeView1.Nodes);
-            Extract.MWriter(MyAllSensors,MyRecord);
-          //  MyRecord.Close();
-     //      List<TreeNode> t = new List<TreeNode>();
-       //  MessageBox.Show( Extract.SelectedCheckedNodes(treeView1.Nodes)[0].Text);
-
-          // MessageBox.Show(t[0].ToString());
-            //   MessageBox.Show(MyAllSensors.Count.ToString());
-            //List<TreeNode> checkedNodes = new List<TreeNode>();
-
-
-            //   MessageBox.Show(Extract.SelectedCheckedNodes(treeView1.Nodes).Count.ToString());
-
-            //     MyOb.Begin(Extract.SelectedCheckedNodes(treeView1.Nodes));
-            //Extract MyOb = new Extract(MyAllSensors,);
-
-
-         //   Extract.Begin(Extract.SelectedCheckedNodes(treeView1.Nodes));
-
-        }
-            //   treeView1.ContextMenuStrip = ContextMenuStrip1;
-        
-                
     }
 
     public class OneSensor
