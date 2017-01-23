@@ -17,6 +17,14 @@ namespace Converter
             L = this.MyListRecordsForOneKKS.Count;
 
         }
+        public Sensors(string sss)
+        {
+            Record OneRecord = new Record();
+            this.MyListRecordsForOneKKS = new List<Record>();
+            this.KKS_Name = sss.Split('\t')[1];
+            this.MyListRecordsForOneKKS.Add(OneRecord);
+        }
+
         public int CompareTo(object other)
         {
             var oth = other as Sensors;
