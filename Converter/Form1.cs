@@ -2619,7 +2619,7 @@ namespace Converter
                 saveFileDialog1.Filter = "out data (*.csv)|*.csv|All files (*.*)|*.*";
                 saveFileDialog1.DefaultExt = "csv";
                 Extract.SelectedCheckedNodes(treeView1.Nodes);
-                Extract.MWriter(MyAllSensors, MyRecord);
+                Extract.MWriterChecked(MyAllSensors, MyRecord);
             }
         }
 
@@ -2627,25 +2627,10 @@ namespace Converter
         {
             if (saveFileDialog4.ShowDialog() == DialogResult.OK)
             {
-                StreamWriter TOFTONEED = new StreamWriter(saveFileDialog4.FileName + ".txt");
-
-                TOFTONEED.Write("Время" + "\t");
-                for (int i = 0; i < MyAllSensors.Count; i++)
-                {
-                    TOFTONEED.Write(MyAllSensors[i].KKS_Name + "\t");
-                }
-                TOFTONEED.WriteLine();
-
-                for (int i = 0; i < MyAllSensors[0].MyListRecordsForOneKKS.Count; i++)
-                {
-                    TOFTONEED.Write(MyAllSensors[0].MyListRecordsForOneKKS[i].DateTime.ToOADate() + "\t");
-                    for (int j = 0; j < MyAllSensors.Count; j++)
-                    {
-                        TOFTONEED.Write(MyAllSensors[j].MyListRecordsForOneKKS[i].Value + "\t");
-                    }
-                    TOFTONEED.WriteLine();
-                }
-                TOFTONEED.Close();
+                StreamWriter myAllParamToExcel = new StreamWriter(saveFileDialog4.FileName + ".csv", false, Encoding.Default);
+                saveFileDialog4.Filter = "out data (*.csv)|*.csv|All files (*.*)|*.*";
+                saveFileDialog4.DefaultExt = "csv";
+                Extract.MWriterAll(MyAllSensors, myAllParamToExcel);
             }
         }
 

@@ -184,7 +184,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Controls.Add(this.menuStrip1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.button3, 6, 0);
@@ -214,7 +214,7 @@
             this.найтиМКРToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(262, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(258, 26);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -379,7 +379,7 @@
             this.button3.BackColor = System.Drawing.Color.SandyBrown;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(585, 3);
+            this.button3.Location = new System.Drawing.Point(580, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(56, 20);
             this.button3.TabIndex = 6;
@@ -393,9 +393,9 @@
             this.button2.BackColor = System.Drawing.Color.SandyBrown;
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(515, 3);
+            this.button2.Location = new System.Drawing.Point(511, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(64, 20);
+            this.button2.Size = new System.Drawing.Size(63, 20);
             this.button2.TabIndex = 5;
             this.button2.Text = "<";
             this.button2.UseVisualStyleBackColor = false;
@@ -406,7 +406,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(921, 3);
+            this.button5.Location = new System.Drawing.Point(916, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(177, 20);
             this.button5.TabIndex = 7;
@@ -419,9 +419,9 @@
             this.label2.AutoSize = true;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(1104, 0);
+            this.label2.Location = new System.Drawing.Point(1099, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 26);
+            this.label2.Size = new System.Drawing.Size(31, 26);
             this.label2.TabIndex = 8;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
@@ -430,7 +430,7 @@
             // 
             this.button8.BackColor = System.Drawing.Color.Red;
             this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.Location = new System.Drawing.Point(453, 3);
+            this.button8.Location = new System.Drawing.Point(449, 3);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(56, 20);
             this.button8.TabIndex = 9;
@@ -443,7 +443,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.GreenYellow;
             this.checkBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox1.Location = new System.Drawing.Point(389, 3);
+            this.checkBox1.Location = new System.Drawing.Point(385, 3);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(58, 20);
             this.checkBox1.TabIndex = 10;
@@ -457,7 +457,7 @@
             this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button9.Location = new System.Drawing.Point(350, 3);
+            this.button9.Location = new System.Drawing.Point(346, 3);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(33, 20);
             this.button9.TabIndex = 11;
@@ -471,7 +471,7 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox3.Location = new System.Drawing.Point(265, 3);
+            this.checkBox3.Location = new System.Drawing.Point(261, 3);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(79, 20);
             this.checkBox3.TabIndex = 12;
@@ -484,7 +484,7 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.BackColor = System.Drawing.SystemColors.ControlLight;
             this.checkBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox4.Location = new System.Drawing.Point(647, 3);
+            this.checkBox4.Location = new System.Drawing.Point(642, 3);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(168, 20);
             this.checkBox4.TabIndex = 13;
@@ -499,7 +499,7 @@
             this.checkBox5.AutoSize = true;
             this.checkBox5.BackColor = System.Drawing.SystemColors.ControlLight;
             this.checkBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox5.Location = new System.Drawing.Point(821, 3);
+            this.checkBox5.Location = new System.Drawing.Point(816, 3);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(94, 20);
             this.checkBox5.TabIndex = 14;
@@ -994,14 +994,14 @@
             // 
             this.перевестиВсеДанныеВTXTToolStripMenuItem.Name = "перевестиВсеДанныеВTXTToolStripMenuItem";
             this.перевестиВсеДанныеВTXTToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
-            this.перевестиВсеДанныеВTXTToolStripMenuItem.Text = "Перевести все данные в TXT";
+            this.перевестиВсеДанныеВTXTToolStripMenuItem.Text = "Перевести все данные в Excel";
             this.перевестиВсеДанныеВTXTToolStripMenuItem.Click += new System.EventHandler(this.перевестиВсеДанныеВTXTToolStripMenuItem_Click);
             // 
             // извлечьПараметрыВТXTToolStripMenuItem
             // 
             this.извлечьПараметрыВТXTToolStripMenuItem.Name = "извлечьПараметрыВТXTToolStripMenuItem";
             this.извлечьПараметрыВТXTToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
-            this.извлечьПараметрыВТXTToolStripMenuItem.Text = "Извлечь параметры в ТXT";
+            this.извлечьПараметрыВТXTToolStripMenuItem.Text = "Извлечь параметры в Excel";
             this.извлечьПараметрыВТXTToolStripMenuItem.Click += new System.EventHandler(this.извлечьПараметрыВТXTToolStripMenuItem_Click);
             // 
             // contextMenuStrip2

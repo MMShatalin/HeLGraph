@@ -44,7 +44,7 @@ namespace Converter
             }
         }
 
-        public static void MWriter(List<Sensors> MyAllSensors,
+        public static void MWriterChecked(List<Sensors> MyAllSensors,
             StreamWriter MyRecord)
         {
             List<int> mycount = new List<int>();
@@ -85,7 +85,42 @@ namespace Converter
              }
 
             MyRecord.Close();
-      //      MessageBox.Show(_myNameKks.Count.ToString());
-        }
+        }//конец метода
+
+        public static void MWriterAll(List<Sensors> MyAllSensors,
+            StreamWriter MyRecord)
+        {
+            List<int> mycount = new List<int>();
+        
+            for (int j = 0; j < MyAllSensors.Count; j++)
+            {
+                mycount.Add(MyAllSensors[j].MyListRecordsForOneKKS.Count);
+            }
+
+            for (int i = 0; i < MyAllSensors.Count; i++)
+            {
+                MyRecord.Write(MyAllSensors[i].KKS_Name + ";;");
+            }
+            MyRecord.WriteLine();
+            int max = mycount.Max();
+
+            for (int j = 0; j < max; j++)
+            {
+                for (int i = 0; i < MyAllSensors.Count; i++)
+                {
+                    if (j <= MyAllSensors[i].MyListRecordsForOneKKS.Count - 1)
+                    {
+                        MyRecord.Write(MyAllSensors[i].MyListRecordsForOneKKS[j].DateTime + ";" + MyAllSensors[i].MyListRecordsForOneKKS[j].Value + ";");
+                    }
+                    else
+                    {
+                        MyRecord.Write(";;");
+                    }
+                }
+                MyRecord.WriteLine();
+            }
+
+            MyRecord.Close();
+        }//конец метода
     }
 }
