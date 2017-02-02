@@ -184,7 +184,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Controls.Add(this.menuStrip1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.button3, 6, 0);
@@ -381,7 +381,7 @@
             this.button3.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Location = new System.Drawing.Point(580, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 20);
+            this.button3.Size = new System.Drawing.Size(55, 20);
             this.button3.TabIndex = 6;
             this.button3.Text = ">";
             this.button3.UseVisualStyleBackColor = false;
@@ -406,7 +406,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(916, 3);
+            this.button5.Location = new System.Drawing.Point(915, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(177, 20);
             this.button5.TabIndex = 7;
@@ -419,9 +419,9 @@
             this.label2.AutoSize = true;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(1099, 0);
+            this.label2.Location = new System.Drawing.Point(1098, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 26);
+            this.label2.Size = new System.Drawing.Size(32, 26);
             this.label2.TabIndex = 8;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
@@ -484,7 +484,7 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.BackColor = System.Drawing.SystemColors.ControlLight;
             this.checkBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox4.Location = new System.Drawing.Point(642, 3);
+            this.checkBox4.Location = new System.Drawing.Point(641, 3);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(168, 20);
             this.checkBox4.TabIndex = 13;
@@ -499,7 +499,7 @@
             this.checkBox5.AutoSize = true;
             this.checkBox5.BackColor = System.Drawing.SystemColors.ControlLight;
             this.checkBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox5.Location = new System.Drawing.Point(816, 3);
+            this.checkBox5.Location = new System.Drawing.Point(815, 3);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(94, 20);
             this.checkBox5.TabIndex = 14;

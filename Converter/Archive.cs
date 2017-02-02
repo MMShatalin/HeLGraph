@@ -52,6 +52,9 @@ namespace Converter
                 case "txtSVRK":
                     return 8;
                     break;
+                case "ex":
+                    return 9;
+                    break;
                 default:
                     return -1;
                     break;
@@ -76,10 +79,59 @@ namespace Converter
                     case 8:
                         LoadSVRKtxt(filename, y);
                         break;
+                    case 9:
+                        LoadEx(filename, y);
+                        break;
                     default:
                         break;
                 }
             }
+        }
+
+        public static void LoadEx(string filename, List<Sensors> y )
+        {
+            string line = "";
+            StreamReader MyFile = new StreamReader(filename, Encoding.GetEncoding("Windows-1251"));
+            List<Sensors> MyList = new List<Sensors>();
+            MyList.Clear();
+
+            List<string> KKS = new List<string>();
+            line = MyFile.ReadLine();
+            KKS = line.Split('\t').ToList();
+            foreach (var item in KKS)
+            {
+                if (item == "")
+                {
+                    KKS.Remove(item);
+                }
+            }
+            int i2 = 0;
+            foreach (string item in KKS)
+            {
+                i2++;
+                if (i2 > 1)
+                {
+                    Sensors myonekks = new Sensors();
+                    myonekks.KKS_Name = item;
+                    MyList.Add(myonekks);
+                }
+            }
+
+            while ((line = MyFile.ReadLine()) != null)
+            {
+                KKS.Clear();
+                KKS = line.Split('\t').ToList();
+                for (int i = 1; i < MyList.Count + 1; i++)
+                {
+                    Record myRec = new Record();
+                    myRec.DateTime = new DateTime(1970, 1, 1).AddSeconds(double.Parse(KKS[0].Trim()));
+                    myRec.Value = double.Parse(KKS[i]);
+                    MyList[i - 1].MyListRecordsForOneKKS.Add(myRec);
+                }
+            }
+
+            y.AddRange(MyList);
+            MyFile.Close();
         }
 
         public static void LoadSVRKtxt(string filename, List<Sensors> y)
