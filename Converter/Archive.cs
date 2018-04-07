@@ -52,8 +52,11 @@ namespace Converter
                 case "txtSVRK":
                     return 8;
                     break;
-                case "ex":
+                case "tir":
                     return 9;
+                    break;
+                case "ex":
+                    return 10;
                     break;
                 default:
                     return -1;
@@ -82,12 +85,63 @@ namespace Converter
                     case 9:
                         LoadEx(filename, y);
                         break;
+                    case 10:
+                        LoadExcelTab(filename, y);
+                        break;
                     default:
                         break;
                 }
             }
         }
+        private static void LoadExcelTab(string filename, List<Sensors> y)
+        {
+            List<Sensors> MyList = new List<Sensors>();
+            System.IO.StreamReader streamReader;
+            streamReader = new System.IO.StreamReader(filename, Encoding.GetEncoding("Windows-1251"));
+            MyList.Clear();
+            List<string> KKS = new List<string>();
+            string line = streamReader.ReadLine();
+            KKS = line.Split('\t').ToList();
+        //    KKS.RemoveAt(0);
 
+             foreach(var item in KKS)
+             {
+                 Sensors NextSensors = new Sensors();
+                 NextSensors.KKS_Name = item;
+                 MyList.Add(NextSensors);
+             }
+             MyList.RemoveAt(0);
+             while ((line = streamReader.ReadLine()) != null)
+             {
+                 KKS.Clear();
+                 KKS = line.Split('\t').ToList();
+
+
+                 for (int i = 1; i < MyList.Count; i++)
+                 {
+                     Record oneRecord = new Record();
+                     try
+                     {
+                         oneRecord.DateTime = DateTime.FromOADate(double.Parse(KKS[0].Replace('.', ',')));
+                         oneRecord.Value = double.Parse(KKS[i].Replace('.', ','));
+                        //  MyList[i].MyListRecordsForOneKKS.Add(oneRecord);
+                     }
+                     catch(Exception ex)
+                     {
+                         MessageBox.Show(ex.Message);
+                                            }
+                         MyList[i].MyListRecordsForOneKKS.Add(oneRecord);
+
+                 }
+
+             }
+
+             y.AddRange(MyList);
+             streamReader.Close();
+          
+
+
+        }
         public static void LoadEx(string filename, List<Sensors> y )
         {
             string line = "";
@@ -133,7 +187,7 @@ namespace Converter
             y.AddRange(MyList);
             MyFile.Close();
         }
-
+       
         public static void LoadSVRKtxt(string filename, List<Sensors> y)
         {
             List<Sensors> MyList = new List<Sensors>();

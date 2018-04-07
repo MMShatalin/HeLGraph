@@ -338,7 +338,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.LavenderBlush;
             this.checkBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox1.Location = new System.Drawing.Point(175, 3);
+            this.checkBox1.Location = new System.Drawing.Point(174, 3);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(112, 20);
             this.checkBox1.TabIndex = 92;
@@ -380,7 +380,7 @@
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label36.Location = new System.Drawing.Point(3, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(166, 26);
+            this.label36.Size = new System.Drawing.Size(165, 26);
             this.label36.TabIndex = 99;
             this.label36.Text = "Формат горизонтальной сетки";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -392,7 +392,7 @@
             this.radioButton8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radioButton8.Location = new System.Drawing.Point(3, 3);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(77, 16);
+            this.radioButton8.Size = new System.Drawing.Size(76, 16);
             this.radioButton8.TabIndex = 100;
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Пунктирная";
@@ -404,7 +404,7 @@
             this.radioButton9.AutoSize = true;
             this.radioButton9.BackColor = System.Drawing.Color.LavenderBlush;
             this.radioButton9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton9.Location = new System.Drawing.Point(86, 3);
+            this.radioButton9.Location = new System.Drawing.Point(85, 3);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(77, 16);
             this.radioButton9.TabIndex = 101;
@@ -432,7 +432,7 @@
             this.label5.BackColor = System.Drawing.Color.LavenderBlush;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(293, 0);
+            this.label5.Location = new System.Drawing.Point(292, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(182, 26);
             this.label5.TabIndex = 107;
@@ -444,9 +444,9 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.BackColor = System.Drawing.Color.LavenderBlush;
             this.checkBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox2.Location = new System.Drawing.Point(481, 3);
+            this.checkBox2.Location = new System.Drawing.Point(480, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(182, 20);
+            this.checkBox2.Size = new System.Drawing.Size(183, 20);
             this.checkBox2.TabIndex = 108;
             this.checkBox2.Text = "Всп. штриховка";
             this.checkBox2.UseVisualStyleBackColor = false;
@@ -490,7 +490,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 103F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67F));
             this.tableLayoutPanel2.Controls.Add(this.label3, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.label38, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.textBox15, 2, 5);
@@ -552,7 +552,7 @@
             this.label3.BackColor = System.Drawing.Color.PaleGreen;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(52, 53);
+            this.label3.Location = new System.Drawing.Point(51, 53);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 21);
             this.label3.TabIndex = 5;
@@ -565,7 +565,7 @@
             this.label38.BackColor = System.Drawing.Color.PaleGreen;
             this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label38.Location = new System.Drawing.Point(52, 0);
+            this.label38.Location = new System.Drawing.Point(51, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(123, 21);
             this.label38.TabIndex = 104;
@@ -575,9 +575,9 @@
             // textBox15
             // 
             this.textBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox15.Location = new System.Drawing.Point(181, 127);
+            this.textBox15.Location = new System.Drawing.Point(180, 127);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(127, 20);
+            this.textBox15.Size = new System.Drawing.Size(126, 20);
             this.textBox15.TabIndex = 50;
             this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
             // 
@@ -587,9 +587,9 @@
             this.label4.BackColor = System.Drawing.Color.PaleGreen;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(181, 53);
+            this.label4.Location = new System.Drawing.Point(180, 53);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 21);
+            this.label4.Size = new System.Drawing.Size(126, 21);
             this.label4.TabIndex = 8;
             this.label4.Text = "Max";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -602,7 +602,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(3, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 25);
+            this.label2.Size = new System.Drawing.Size(42, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Ось Y1";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -615,7 +615,7 @@
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label19.Location = new System.Drawing.Point(3, 99);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(43, 25);
+            this.label19.Size = new System.Drawing.Size(42, 25);
             this.label19.TabIndex = 41;
             this.label19.Text = "Ось Y2";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -628,7 +628,7 @@
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label21.Location = new System.Drawing.Point(3, 124);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(43, 25);
+            this.label21.Size = new System.Drawing.Size(42, 25);
             this.label21.TabIndex = 48;
             this.label21.Text = "Ось Y3";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -641,7 +641,7 @@
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label26.Location = new System.Drawing.Point(3, 149);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(43, 28);
+            this.label26.Size = new System.Drawing.Size(42, 28);
             this.label26.TabIndex = 65;
             this.label26.Text = "Ось Y4";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -649,7 +649,7 @@
             // textBox2
             // 
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(52, 77);
+            this.textBox2.Location = new System.Drawing.Point(51, 77);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(123, 20);
             this.textBox2.TabIndex = 4;
@@ -658,7 +658,7 @@
             // textBox12
             // 
             this.textBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox12.Location = new System.Drawing.Point(52, 102);
+            this.textBox12.Location = new System.Drawing.Point(51, 102);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(123, 20);
             this.textBox12.TabIndex = 42;
@@ -667,7 +667,7 @@
             // textBox19
             // 
             this.textBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox19.Location = new System.Drawing.Point(52, 152);
+            this.textBox19.Location = new System.Drawing.Point(51, 152);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(123, 20);
             this.textBox19.TabIndex = 66;
@@ -676,27 +676,27 @@
             // textBox4
             // 
             this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(181, 77);
+            this.textBox4.Location = new System.Drawing.Point(180, 77);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(127, 20);
+            this.textBox4.Size = new System.Drawing.Size(126, 20);
             this.textBox4.TabIndex = 7;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox11
             // 
             this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox11.Location = new System.Drawing.Point(181, 102);
+            this.textBox11.Location = new System.Drawing.Point(180, 102);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(127, 20);
+            this.textBox11.Size = new System.Drawing.Size(126, 20);
             this.textBox11.TabIndex = 43;
             this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // textBox20
             // 
             this.textBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox20.Location = new System.Drawing.Point(181, 152);
+            this.textBox20.Location = new System.Drawing.Point(180, 152);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(127, 20);
+            this.textBox20.Size = new System.Drawing.Size(126, 20);
             this.textBox20.TabIndex = 67;
             this.textBox20.TextChanged += new System.EventHandler(this.textBox20_TextChanged);
             // 
@@ -706,7 +706,7 @@
             this.label7.BackColor = System.Drawing.Color.PaleGreen;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(314, 21);
+            this.label7.Location = new System.Drawing.Point(312, 21);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 32);
             this.label7.TabIndex = 17;
@@ -719,7 +719,7 @@
             this.label40.BackColor = System.Drawing.Color.PaleGreen;
             this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label40.Location = new System.Drawing.Point(417, 0);
+            this.label40.Location = new System.Drawing.Point(415, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(47, 21);
             this.label40.TabIndex = 106;
@@ -732,7 +732,7 @@
             this.label6.BackColor = System.Drawing.Color.PaleGreen;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(314, 74);
+            this.label6.Location = new System.Drawing.Point(312, 74);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(97, 25);
             this.label6.TabIndex = 16;
@@ -742,7 +742,7 @@
             // textBox6
             // 
             this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Location = new System.Drawing.Point(417, 77);
+            this.textBox6.Location = new System.Drawing.Point(415, 77);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(47, 20);
             this.textBox6.TabIndex = 19;
@@ -751,9 +751,9 @@
             // numericUpDown8
             // 
             this.numericUpDown8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown8.Location = new System.Drawing.Point(535, 152);
+            this.numericUpDown8.Location = new System.Drawing.Point(533, 152);
             this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown8.Size = new System.Drawing.Size(63, 20);
             this.numericUpDown8.TabIndex = 71;
             this.numericUpDown8.ValueChanged += new System.EventHandler(this.numericUpDown8_ValueChanged);
             // 
@@ -763,7 +763,7 @@
             this.label18.BackColor = System.Drawing.Color.PaleGreen;
             this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Location = new System.Drawing.Point(314, 99);
+            this.label18.Location = new System.Drawing.Point(312, 99);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(97, 25);
             this.label18.TabIndex = 39;
@@ -776,7 +776,7 @@
             this.label28.BackColor = System.Drawing.Color.PaleGreen;
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Location = new System.Drawing.Point(470, 149);
+            this.label28.Location = new System.Drawing.Point(468, 149);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(59, 28);
             this.label28.TabIndex = 70;
@@ -786,7 +786,7 @@
             // textBox10
             // 
             this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox10.Location = new System.Drawing.Point(417, 102);
+            this.textBox10.Location = new System.Drawing.Point(415, 102);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(47, 20);
             this.textBox10.TabIndex = 37;
@@ -795,9 +795,9 @@
             // numericUpDown7
             // 
             this.numericUpDown7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown7.Location = new System.Drawing.Point(535, 127);
+            this.numericUpDown7.Location = new System.Drawing.Point(533, 127);
             this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown7.Size = new System.Drawing.Size(63, 20);
             this.numericUpDown7.TabIndex = 52;
             this.numericUpDown7.ValueChanged += new System.EventHandler(this.numericUpDown7_ValueChanged);
             // 
@@ -807,7 +807,7 @@
             this.label20.BackColor = System.Drawing.Color.PaleGreen;
             this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Location = new System.Drawing.Point(314, 124);
+            this.label20.Location = new System.Drawing.Point(312, 124);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(97, 25);
             this.label20.TabIndex = 47;
@@ -820,7 +820,7 @@
             this.label22.BackColor = System.Drawing.Color.PaleGreen;
             this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Location = new System.Drawing.Point(470, 124);
+            this.label22.Location = new System.Drawing.Point(468, 124);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(59, 25);
             this.label22.TabIndex = 51;
@@ -830,7 +830,7 @@
             // textBox13
             // 
             this.textBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox13.Location = new System.Drawing.Point(417, 127);
+            this.textBox13.Location = new System.Drawing.Point(415, 127);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(47, 20);
             this.textBox13.TabIndex = 46;
@@ -839,16 +839,16 @@
             // numericUpDown6
             // 
             this.numericUpDown6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown6.Location = new System.Drawing.Point(535, 102);
+            this.numericUpDown6.Location = new System.Drawing.Point(533, 102);
             this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown6.Size = new System.Drawing.Size(63, 20);
             this.numericUpDown6.TabIndex = 45;
             this.numericUpDown6.ValueChanged += new System.EventHandler(this.numericUpDown6_ValueChanged);
             // 
             // textBox21
             // 
             this.textBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox21.Location = new System.Drawing.Point(417, 152);
+            this.textBox21.Location = new System.Drawing.Point(415, 152);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(47, 20);
             this.textBox21.TabIndex = 69;
@@ -860,7 +860,7 @@
             this.label17.BackColor = System.Drawing.Color.PaleGreen;
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Location = new System.Drawing.Point(470, 99);
+            this.label17.Location = new System.Drawing.Point(468, 99);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(59, 25);
             this.label17.TabIndex = 44;
@@ -873,7 +873,7 @@
             this.label27.BackColor = System.Drawing.Color.PaleGreen;
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label27.Location = new System.Drawing.Point(314, 149);
+            this.label27.Location = new System.Drawing.Point(312, 149);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(97, 28);
             this.label27.TabIndex = 68;
@@ -883,18 +883,18 @@
             // numericUpDown4
             // 
             this.numericUpDown4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown4.Location = new System.Drawing.Point(535, 77);
+            this.numericUpDown4.Location = new System.Drawing.Point(533, 77);
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown4.Size = new System.Drawing.Size(63, 20);
             this.numericUpDown4.TabIndex = 35;
             this.numericUpDown4.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
             // 
             // numericUpDown5
             // 
             this.numericUpDown5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown5.Location = new System.Drawing.Point(535, 24);
+            this.numericUpDown5.Location = new System.Drawing.Point(533, 24);
             this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown5.Size = new System.Drawing.Size(63, 20);
             this.numericUpDown5.TabIndex = 36;
             this.numericUpDown5.ValueChanged += new System.EventHandler(this.numericUpDown5_ValueChanged);
             // 
@@ -904,9 +904,9 @@
             this.label11.BackColor = System.Drawing.Color.PaleGreen;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(535, 0);
+            this.label11.Location = new System.Drawing.Point(533, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 21);
+            this.label11.Size = new System.Drawing.Size(63, 21);
             this.label11.TabIndex = 26;
             this.label11.Text = "Размер шрифта";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -917,7 +917,7 @@
             this.label12.BackColor = System.Drawing.Color.PaleGreen;
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(470, 21);
+            this.label12.Location = new System.Drawing.Point(468, 21);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(59, 32);
             this.label12.TabIndex = 27;
@@ -930,7 +930,7 @@
             this.label13.BackColor = System.Drawing.Color.PaleGreen;
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(470, 74);
+            this.label13.Location = new System.Drawing.Point(468, 74);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(59, 25);
             this.label13.TabIndex = 28;
@@ -940,7 +940,7 @@
             // textBox5
             // 
             this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Location = new System.Drawing.Point(417, 24);
+            this.textBox5.Location = new System.Drawing.Point(415, 24);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(47, 20);
             this.textBox5.TabIndex = 18;
@@ -954,7 +954,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 32);
+            this.label1.Size = new System.Drawing.Size(42, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ось X";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -962,7 +962,7 @@
             // textBox14
             // 
             this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox14.Location = new System.Drawing.Point(52, 127);
+            this.textBox14.Location = new System.Drawing.Point(51, 127);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(123, 20);
             this.textBox14.TabIndex = 49;
@@ -974,9 +974,9 @@
             this.label39.BackColor = System.Drawing.Color.PaleGreen;
             this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label39.Location = new System.Drawing.Point(181, 0);
+            this.label39.Location = new System.Drawing.Point(180, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(127, 21);
+            this.label39.Size = new System.Drawing.Size(126, 21);
             this.label39.TabIndex = 105;
             this.label39.Text = "Max";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -984,7 +984,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker1.Location = new System.Drawing.Point(52, 24);
+            this.dateTimePicker1.Location = new System.Drawing.Point(51, 24);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(123, 20);
             this.dateTimePicker1.TabIndex = 107;
@@ -993,9 +993,9 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker2.Location = new System.Drawing.Point(181, 24);
+            this.dateTimePicker2.Location = new System.Drawing.Point(180, 24);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(127, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(126, 20);
             this.dateTimePicker2.TabIndex = 108;
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
@@ -1324,7 +1324,7 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.24765F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.75235F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 187F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
             this.tableLayoutPanel10.Controls.Add(this.checkBox1, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.label36, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.label5, 2, 0);
@@ -1352,7 +1352,7 @@
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(166, 22);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(165, 22);
             this.tableLayoutPanel11.TabIndex = 109;
             // 
             // tableLayoutPanel12
@@ -1363,7 +1363,7 @@
             this.tableLayoutPanel12.Controls.Add(this.radioButton1, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.radioButton2, 1, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(293, 29);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(292, 29);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
